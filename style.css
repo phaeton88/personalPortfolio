@@ -1,3 +1,44 @@
 body {
   font-family: Helvetica, sans-serif;
 }
+
+nav {
+  background-color: #eee;
+  border-bottom: solid 1px #ddd;
+}
+
+a {
+  color: #00008b;
+}
+
+@media (min-width: 1200px) {
+  #navbarMenu {
+    display: none !important;
+  }
+}
+
+#navbarMenu {
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  z-index: 1;
+}
+
+#navbarMenuToggler,
+.navbar-brand {
+  color: #00008b;
+  z-index: 2;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+a:hover,
+#navbarMenuToggler:hover {
+  color: #0000d8;
+}
