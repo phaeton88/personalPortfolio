@@ -19,9 +19,9 @@
         <a class="navbar-brand py-4" href="">Alexander Kostritsa</a>
         <div class="navbar-nav ml-auto my-auto">
           <a class="nav-item nav-link pl-4 ml-3" href="">Home</a>
-          <a class="nav-item nav-link pl-4 ml-3" href="">Portfolio</a>
-          <a class="nav-item nav-link pl-4 ml-3" href="">About</a>
-          <a class="nav-item nav-link pl-4 ml-3" href="">Contact</a>
+          <a class="nav-item nav-link pl-4 ml-3" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link pl-4 ml-3" href="#about-section">About</a>
+          <a class="nav-item nav-link pl-4 ml-3" href="#contact">Contact</a>
         </div>
       </div>
       <!-- smaller screen navbar -->
@@ -30,54 +30,101 @@
       <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse position-absolute" id="navbarMenu">
-        <a class="nav-item nav-link pl-4" href="index.html">Home</a>
-        <a class="nav-item nav-link pl-4" href="">Portfolio</a>
-        <a class="nav-item nav-link pl-4" href="">About</a>
-        <a class="nav-item nav-link pl-4" href="">Contact</a>
+        <a class="nav-item nav-link pl-4" href="">Home</a>
+        <a class="nav-item nav-link pl-4" href="#portfolio">Portfolio</a>
+        <a class="nav-item nav-link pl-4" href="#about-section">About</a>
+        <a class="nav-item nav-link pl-4" href="#contact">Contact</a>
       </div>
     </nav>
     <!-- main hero -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 d-flex w-100 main-hero mb-4">
-          <div class="my-auto mx-auto">
-            <h1 class="text-center">Alexander Kostritsa</h1>
-            <p class="text-center">Student at &nbsp<a href="https://www.altcademy.com/" target="blank">Altcademy</a><br>Future Full Stack Web Developer</p>
+        <div class="col-12 d-flex w-100 main-hero mb-4 position-relative">
+          <div class="my-auto mx-auto hero-text">
+            <h1 class="text-center name">Alexander Kostritsa</h1>
+            <p class="text-center">Student at &nbsp<a class="white" href="https://www.altcademy.com/" target="blank">Altcademy</a><br>Future Full Stack Web Developer</p>
           </div>
         </div>
       </div>
     </div>
     <hr>
       <!-- portfolio -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="portfolio">
       <h2 class= "text-center portfolio-title">Portfolio</h2>
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="portfolio">
             <img class="img-fluid w-100 rounded" src="https://via.placeholder.com/333x222"/>
-            <h4 class="projectNumber"><a href="">Project 1</a></h4>
+            <h4 class="projectNumber">Project 1</h4>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="portfolio">
             <img class="img-fluid w-100 rounded" src="https://via.placeholder.com/333x222"/>
-            <h4 class="projectNumber"><a href="">Project 2</a></h4>
+            <h4 class="projectNumber">Project 2</h4>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="portfolio">
             <img class="img-fluid w-100 rounded" src="https://via.placeholder.com/333x222"/>
-            <h4 class="projectNumber"><a href="">Project 3</a></h4>
+            <h4 class="projectNumber">Project 3</h4>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="portfolio">
             <img class="img-fluid w-100 rounded" src="https://via.placeholder.com/333x222"/>
-            <h4 class="projectNumber"><a href="">Project 4</a></h4>
+            <h4 class="projectNumber">Project 4</h4>
           </div>
         </div>
       </div>
     </div>
+    <hr class="d-none d-sm-block">
+    <!-- about me -->
+    <div class="container-fluid" id="about-section">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <div href="" class="thumbnail"><div class="background"></div></div>
+        </div>
+        <div class="col-12">
+          <div class="about mt-3">
+            <h4 class="about-me">About Me</h4>
+            <p class="about-me">I am a professional musician and a full stack web development student. I would like to get a job as a web developer and also use my coding skills to build websites to promote my music</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- contact -->
+    <h4 class="text-center py-4" id="contact">Contact Us</h4>
+    <form>
+      <div class="form-row px-4">
+        <div class="col-12 col-md-6 col-xl-4 py-2">
+          <label for="inputFirstName" class="required">First name</label>
+          <input type="text" class="form-control" id="inputFirstName" placeholder="Enter first name" required>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 py-2">
+          <label for="inputLastName">Last Name</label>
+          <input type="password" class="form-control" id="inputLastName" placeholder="Enter last name">
+        </div>
+        <div class="col-12 col-xl-4 py-2">
+          <label for="inputEmail1" class="required">Email</label>
+          <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        </div>
+        <div class="col-12 py-2">
+          <label for="inputMessage">Message</label>
+          <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+        </div>
+        <button id="submit-button" type="submit" class="btn btn-block btn-md-lg btn-primary mx-auto my-4">Send</button>
+      </div>
+    </form>
+    <hr>
+    <!-- footer -->
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <small class="copy pt-2">&copy 2020 Alexander Kostritsa</small><div class="icons pt-2 pb-5"><a href="https://www.facebook.com/alexander.kostritsa.75/" target="blank"><i class="pl-4 fab fa-facebook-f"></i></a><a href="https://www.instagram.com/alex.veloce/" target="blank"><i class=" pl-3 fab fa-instagram"></i></a></div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
