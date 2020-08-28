@@ -92,6 +92,14 @@ a:hover,
   padding-top: 1rem;
 }
 
+#portfolio::before,
+#about-section::before {
+  display: block;
+  content: "";
+  height: 65px;
+  margin: -65px 0 0;
+}
+
 .portfolio {
   margin-top: 20px;
 }
@@ -129,14 +137,16 @@ a:hover,
   box-shadow: 0 0 0 1px #ccc;
 }
 
-.background {
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-}
+@media (min-width: 1200px) {
+  .background {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
 
-.thumbnail:hover .background {
-  transform: scale(1.1);
+  .thumbnail:hover .background {
+    transform: scale(1.1);
+  }
 }
 
 .copy {
@@ -152,6 +162,11 @@ a:hover,
     width: 150px;
     height: 50px;
   }
+}
+
+.form-row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .form-row .required::after {
